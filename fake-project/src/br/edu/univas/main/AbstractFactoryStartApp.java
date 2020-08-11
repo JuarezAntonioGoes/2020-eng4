@@ -6,7 +6,7 @@ import br.edu.univas.factory.GeometricShapeType;
 import br.edu.univas.factory.ShapeType;
 import br.edu.univas.vo.GeometricShape;
 
-public class StartApp {
+public class AbstractFactoryStartApp {
 
 	public static void main(String[] args) {
 		AbstractFactory factory = FactoryProvider.getFactory(ShapeType.TWO_D);
