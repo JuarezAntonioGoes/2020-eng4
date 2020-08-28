@@ -1,10 +1,18 @@
 package br.edu.univas.vo;
 
-public class Candy implements ChristmasTree {
+public class Candy extends ChristmasTreeDecorator {
 
+	public Candy() {
+		super();
+	}
+	
+	public Candy(ChristmasTree christmasTree) {
+		super(christmasTree);
+	}
+	
 	@Override
 	public String decorate() {
-		return " with Colored Candy";
+		return " with Colored Candy " + outroDecorate();
 	}
 
 }

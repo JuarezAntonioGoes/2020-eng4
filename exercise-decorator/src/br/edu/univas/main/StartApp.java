@@ -3,6 +3,7 @@ package br.edu.univas.main;
 import br.edu.univas.vo.Bulbs;
 import br.edu.univas.vo.Candy;
 import br.edu.univas.vo.ChristmasTree;
+import br.edu.univas.vo.ChristmasTreeDecorator;
 import br.edu.univas.vo.ChristmasTreeImpl;
 
 public class StartApp {
@@ -15,7 +16,12 @@ public class StartApp {
 		String myTree = tree.decorate() + 
 				bulb.decorate() +
 				candy.decorate();
-		System.out.println(myTree);
+		//System.out.println(myTree);
 		
+		
+		ChristmasTreeDecorator treeDecorator = new ChristmasTreeImpl(
+				new Bulbs(new Candy()));
+		System.out.println(treeDecorator.decorate());
+				
 	}
 }
