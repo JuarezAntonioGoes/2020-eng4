@@ -1,12 +1,28 @@
 package br.edu.univas.vo;
 
-public class Onions {
+public class Onions extends PizzaDecorator {
 
+	public Onions() {
+		super();
+	}
+	
+	public Onions(Pizza pizza) {
+		super(pizza);
+	}
+	
+	@Override
 	public String description() {
-		return "Cebola";
+		if (pizza == null) {
+			return "Cebola";
+		}
+		return pizza.description() + " Cebola";
 	}
 
+	@Override
 	public double price() {
-		return 1.5;
+		if (pizza == null) {
+			return 1.5;
+		}
+		return pizza.price() + 1.5;
 	}
 }

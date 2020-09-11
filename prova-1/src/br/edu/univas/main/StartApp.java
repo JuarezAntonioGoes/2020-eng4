@@ -3,6 +3,7 @@ package br.edu.univas.main;
 import br.edu.univas.vo.Cheese;
 import br.edu.univas.vo.MassaPizza;
 import br.edu.univas.vo.Onions;
+import br.edu.univas.vo.Pizza;
 import br.edu.univas.vo.Tomatoes;
 
 public class StartApp {
@@ -25,5 +26,11 @@ public class StartApp {
 		
 		System.out.println("Pedido: " + description);
 		System.out.println("Preço total: R$ " + price);
+		
+		System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+		
+		Pizza pizza2 = new Onions(new Cheese(new Tomatoes(new Tomatoes(new Tomatoes(new MassaPizza())))));
+		System.out.println("Pedido: " + pizza2.description());
+		System.out.println("Preço total: R$ " + pizza2.price());
 	}
 }

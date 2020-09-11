@@ -1,13 +1,29 @@
 package br.edu.univas.vo;
 
-public class Cheese {
+public class Cheese extends PizzaDecorator {
 
+	public Cheese() {
+		super();
+	}
+	
+	public Cheese(Pizza pizza) {
+		super(pizza);
+	}
+	
+	@Override
 	public String description() {
-		return "Queijo";
+		if (pizza == null) {
+			return "Queijo";
+		}
+		return pizza.description() + " Queijo";
 	}
 
+	@Override
 	public double price() {
-		return 2.5;
+		if (pizza == null) {
+			return 2.5;
+		}
+		return pizza.price() + 2.5;
 	}
 
 }
