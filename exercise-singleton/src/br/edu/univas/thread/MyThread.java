@@ -10,14 +10,14 @@ public class MyThread extends Thread {
 	private MyLog log;
 	
 	public MyThread(String threadName) throws IOException {
-		log = new MyLog();
 		this.name = threadName;
-		log.log("Creating " + this.name);
 	}
 	
 	@Override
 	public void run() {
+		log = MyLog.getInstance();
 		try {
+			log.log("Creating " + this.name);
 			log.log("Running " + this.name);
 			for (int i = 0; i < 10; i++) {
 				try {
