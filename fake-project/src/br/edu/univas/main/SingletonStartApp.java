@@ -2,7 +2,7 @@ package br.edu.univas.main;
 
 import br.edu.univas.utils.DataBaseConnection;
 
-public class SingletonApp {
+public class SingletonStartApp {
 
 	public static void main(String[] args) {
 		//DataBaseConnection connection1 = new DataBaseConnection();
