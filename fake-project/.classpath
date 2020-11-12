@@ -6,13 +6,14 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/prototype"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/singleton"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/composite"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/abstract-factory"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/adapter"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/decorator"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/builder"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/bridge"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/builder"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/decorator"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/adapter"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/abstract-factory"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/composite"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/singleton"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/prototype"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/facade"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
